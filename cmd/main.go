@@ -24,7 +24,7 @@ var (
 // Run function to start the exporter
 func Run() {
 	kingpin.Parse()
-	log.Info().Msg("Prusa exporter starting")
+	log.Info().Msg("Prusa Link exporter starting")
 	log.Info().Msg("Loading configuration file: " + *configFile)
 
 	config, err := config.LoadConfig(*configFile)
